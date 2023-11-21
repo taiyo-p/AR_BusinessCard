@@ -9,14 +9,14 @@
     <a-scene mindar-image="imageTargetSrc: minder/r-take_meisi.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <!--img id="card" src="target/r-take_meisi.png"-->
-        <a-asset-item id="avatarModel" src="assets/box.glb"></a-asset-item>
+        <a-asset-item id="avatarModel" src="assets/nousagi.glb"></a-asset-item>
       </a-assets>
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
         <!--a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane-->
         <!--a-box position="0 0.5 0" rotation="0 45 0" color="#4CC3D9"></a-box-->
         <!--a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.5 0.5 0.5" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"-->
-        <a-gltf-model rotation="0 0 90" position="0 0 -2" scale="0.4 0.4 0.4" src="#avatarModel" animation-mixer="clip: jump; loop: repeat;">
+        <a-gltf-model rotation="90 0 0" position="0 0 0.1" scale="3.0 3.0 3.0" src="#avatarModel" animation-mixer="clip: jump; loop: repeat;">
       </a-entity>
     </a-scene>
   </body>
